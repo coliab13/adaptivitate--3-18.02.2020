@@ -1,0 +1,86 @@
+body{
+    background-color: #333333;
+    
+}
+#hero{
+    color: white;
+}
+.container{
+        margin: 0 auto;
+        width: 1140px;
+}
+.bgimage{
+    background: linear-gradient(#005beabb,#005beabb),url(img/hero.jpg);
+    background-size: cover;
+
+}
+.btn-wire{
+    border-radius: 30px;  
+    border: 2px solid #333333;
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    
+}
+.btn-wire::before{
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url(img/download-24px.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(100%);
+    vertical-align: bottom;
+    margin: 0 5px;
+    
+}
+#hero .left,
+#hero .right{
+display: inline-block;
+width: 48%;
+vertical-align: middle;
+}
+#hero .right{
+    text-align: right;
+}
+#hero .left h1{
+    font-size: 3em;
+    font-weight: 700;
+}
+#hero .left p{
+ margin: 2em 0;
+}
+#hero .left a{
+text-decoration: none;
+padding: 1em 1.5em 1em 1.5em;
+/* background: url(img/download-24px.svg) no-repeat 0.5em; */
+/* border: 2px solid #333333; */
+/* border-radius: 30px; */
+}
+#hero .left a:hover{
+    background-color: rgb(45, 45, 238);
+    border-color: rgb(45, 45, 238);
+    transition: 0.5s;
+   
+}
+#hero img{
+    height: 80vh;
+}
+@media (max-width:1170px){
+    .container{
+        width: 900px;
+    }
+}
+@media (max-width:930px){
+    .container{
+        width: 80%;
+    }
+    #hero .right{
+        display: none;
+    }
+    #hero .left{
+        width: 100%;
+        padding: 20vh 0 20vh;
+    }
+}
